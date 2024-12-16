@@ -15,6 +15,7 @@ const CompanyPromotions = ({ companyId }: CompanyPromotionsProps) => {
     queryFn: () => getPromotions({ companyId }),
     staleTime: 10 * 1000,
   });
+
   return (
     <div className="grid grid-cols-12 gap-5">
       {data?.map((promotion) => (
